@@ -9,20 +9,31 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
 
+# ======================================================
+# CONFIGURAÇÃO DA PÁGINA
+# ======================================================
+
 st.set_page_config(
     page_title="Concreto Têxtil",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
+
 st.markdown("""
 <style>
 
+/* Fundo preto */
 [data-testid="stAppViewContainer"] {
-    background-color: #0B3D91;
+    background-color: #0e0e0e;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+/* Texto branco */
+h1, h2, h3, h4, h5, h6, p, label {
     color: white !important;
+}
+
+/* Barra lateral */
+[data-testid="stSidebar"] {
+    background-color: #111111;
 }
 
 </style>
@@ -32,28 +43,14 @@ st.markdown("""
 <style>
 
 .stButton>button {
-    width: 100%;
     background-color: white;
     color: black;
+    width: 100%;
+    border-radius: 8px;
 }
 
 </style>
 """, unsafe_allow_html=True)
-# ======================================================
-# CONFIGURAÇÃO DA PÁGINA
-# ======================================================
-
-st.set_page_config(page_title="Reforço com Concreto Têxtil", layout="wide")
-
-# Fundo azul
-st.markdown("""
-<style>
-.main {
-    background-color: #0B3D91;
-}
-</style>
-""", unsafe_allow_html=True)
-
 # ======================================================
 # CABEÇALHO PROFISSIONAL
 # ======================================================
