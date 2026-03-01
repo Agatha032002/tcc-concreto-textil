@@ -9,6 +9,36 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
 
+st.set_page_config(
+    page_title="Concreto Têxtil",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+st.markdown("""
+<style>
+
+[data-testid="stAppViewContainer"] {
+    background-color: #0B3D91;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: white !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+
+.stButton>button {
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+</style>
+""", unsafe_allow_html=True)
 # ======================================================
 # CONFIGURAÇÃO DA PÁGINA
 # ======================================================
